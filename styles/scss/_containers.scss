@@ -1,0 +1,83 @@
+﻿html, body {
+	height: 100%;
+}
+header {
+	.header-top {
+		background-color: $secondary-color;
+		color: #fff;
+		grid-auto-rows: 50px;
+
+		div {
+			align-self: center;
+
+			i.fab {
+				font-size: 1.5em;
+				padding: 0 5px;
+			}
+		}
+	}
+
+	.header-bottom {
+		.contact {
+			align-self: center;
+
+			a {
+				&.phone {
+					font-size: 20px;
+				}
+
+				&.address {
+					display: flex;
+					font-size: 18px;
+
+					i.fa-map-marker-alt {
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+
+		.menu {
+			align-self: center;
+		}
+	}
+}
+
+main {
+	min-height: calc(100vh - 287px); /* height of header and footer */
+}
+
+footer {
+	.footer-top {
+	}
+
+	.footer-bottom {
+		background-color: $secondary-color;
+		color: $translucent;
+		text-align: center;
+		padding: 10px 0;
+	}
+}
+
+@media (max-width: 50rem){
+	.grid-wrapper {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	header {
+		.header-top {
+			
+			div {
+				text-align: center;
+			}
+			div:first-child {
+				grid-column: 1/1;
+				grid-row: 1;
+			}
+
+			div:last-child {
+				grid-column: 1/1;
+				grid-row: 2;
+			}
+		}
+	}
+}
