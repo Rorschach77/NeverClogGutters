@@ -3,54 +3,45 @@
 	height: 100%;
 }
 
-header
-{
-	.header-top
-	{
+header {
+	.header-top {
 		background-color: $secondary-color;
 		color: #fff;
 		grid-auto-rows: 50px;
 
-		div
-		{
+		div {
 			align-self: center;
 
-			i.fab
-			{
+			i.fab {
 				font-size: 1.5em;
 				padding: 0 5px;
 			}
 		}
 	}
 
-	.header-bottom
-	{
-		.contact
-		{
+	.header-bottom {
+		color: $default-text;
+
+		.contact {
 			align-self: center;
 
-			a
-			{
-				&.phone
-				{
-					font-size: 20px;
+			a {
+				&.phone {
+					font-size: 18px;
 				}
 
-				&.address
-				{
+				&.address {
 					display: flex;
 					font-size: 18px;
 
-					i.fa-map-marker-alt
-					{
+					i.fa-map-marker-alt {
 						margin-right: 10px;
 					}
 				}
 			}
 		}
 
-		.menu
-		{
+		.menu {
 			align-self: center;
 		}
 	}
@@ -61,48 +52,49 @@ main
 	min-height: calc(100vh - 287px); /* height of header and footer */
 }
 
-footer
-{
-	.footer-top
-	{
+footer {
+	.footer-top {
 	}
 
-	.footer-bottom
-	{
+	.footer-bottom {
 		background-color: $secondary-color;
 		color: $translucent;
 		text-align: center;
 		padding: 10px 0;
 	}
+
+	.footer-mobile {
+		background-color: $secondary-color;
+		color: #fff;
+	}
 }
 
-@media (max-width: 50rem)
-{
-	.grid-wrapper
-	{
+section.index-section-01 {
+	background-image: url(/images/good-installation-01.jpeg);
+	width: 100%;
+	padding: 50px;
+}
+
+@media (max-width: 50rem) {
+	.grid-wrapper {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-	header
-	{
-		.header-top
-		{
-			div
-			{
+	header {
+		.header-top {
+			div {
 				text-align: center;
 			}
 
-				div:first-child
-				{
-					grid-column: 1/1;
-					grid-row: 1;
-				}
+			div:first-child {
+				grid-column: 1/1;
+				grid-row: 1;
+			}
 
-				div:last-child
-				{
-					grid-column: 1/1;
-					grid-row: 2;
-				}
+			div:last-child {
+				grid-column: 1/1;
+				grid-row: 2;
+			}
 		}
 	}
 }

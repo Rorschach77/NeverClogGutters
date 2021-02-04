@@ -4,3 +4,15 @@
 @import 'positioning';
 @import 'elements';
 @import 'containers';
+
+@media (min-width: 50rem) {
+	.mobile-only {
+		display: none;
+	}
+}
+
+@media (max-width: 50rem) {
+	.desktop-only {
+		display: none;
+	}
+}
