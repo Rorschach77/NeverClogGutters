@@ -3,6 +3,6 @@
 });
 
 activateMenu = () => {
-	$(".menu-link").removeClass("active");
-	$(".menu-link-us-vs-them").addClass("active");
+	$(".nav-link").removeClass("active");
+	$(".nav-link-us-vs-them").addClass("active");
 };

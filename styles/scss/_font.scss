@@ -1,0 +1,14 @@
+﻿@for $i from 1 through 9 {
+	$weight: $i * 100;
+	.weight-#{$weight} {
+		font-weight: $weight;
+	}
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}

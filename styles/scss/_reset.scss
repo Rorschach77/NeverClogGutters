@@ -19,13 +19,15 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	outline: 0;
-	font-size: 13px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	vertical-align: baseline;
 }
-a, i, span {
-	font-size: unset;
+html, body, div, span {
+	font-size: 14px;
 }
+/*a, i, span {
+	font-size: unset;
+}*/
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -33,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+	line-height: 1em;
 }
 
 ol, ul {
@@ -76,4 +78,9 @@ table {
 a, a:hover, a:active, a:focus, a:visited {
 	color: unset;
 	text-decoration: none;
+}
+
+p {
+	line-height: 1.5em;
+	margin-bottom: 10px;
 }

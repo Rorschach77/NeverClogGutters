@@ -1,0 +1,25 @@
+﻿footer {
+	background-color: white;
+	font-size: .8em;
+	padding-top: 20px;
+
+	.footer-top {
+		display: flex;
+		justify-content: space-between;
+		background-color: $ternary-color;
+		color: $translucent;
+		padding: 10px;
+	}
+
+	.footer-bottom {
+		background-color: $secondary-color;
+		color: $translucent;
+		text-align: center;
+		padding: 10px 0;
+		font-size: .9em;
+
+		span {
+			font-size: .9em;
+		}
+	}
+}

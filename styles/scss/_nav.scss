@@ -1,0 +1,48 @@
+﻿ul.nav {
+	display: flex;
+
+	li {
+		margin-right: 10px;
+		padding: 10px 5px;
+
+		a {
+			/*font-size: 20px;*/
+
+			&.active {
+				color: $primary-color;
+			}
+		}
+
+		&.divider {
+			padding: 0;
+			width: 0;
+			border-right: 1px solid $light-gray;
+		}
+
+		&.has-sub-nav {
+			ul.sub-nav {
+				display: none;
+				/*border: 1px solid $light-gray;*/
+				li {
+					border: none;
+
+					&.divider {
+						padding: 0;
+						height: 0;
+						border-bottom: 1px solid $light-gray;
+						margin-right: 0;
+					}
+				}
+			}
+
+			&:hover {
+				ul.sub-nav {
+					display: block;
+					position: absolute;
+					margin-top: 10px;
+					margin-left: -6px; /* value equal to left padding and border of parent li */
+				}
+			}
+		}
+	}
+}

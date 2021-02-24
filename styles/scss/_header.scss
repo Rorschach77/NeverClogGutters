@@ -1,0 +1,14 @@
+﻿header {
+	background-color: $bootstrap-dark-gray;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+
+	.contact {
+		flex-wrap: wrap;
+	}
+
+	.social-media {
+		align-self: center;
+	}
+}

@@ -1,10 +1,7 @@
 ﻿[
     {
-        "outputFile": "styles/main.css",
-        "inputFile": "styles/scss/main.scss"
-    },
-    {
-        "outputFile": "styles/main2.css",
-        "inputFile": "styles/scss/main2.scss"
+        "outputFile": "styles/styles.css",
+        "inputFile": "styles/scss/styles.scss",
+        "options": { "sourceMap": true }
     }
 ]

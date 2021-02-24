@@ -1,0 +1,41 @@
+﻿.bg-dark {
+	background-color: $secondary-color !important;
+}
+
+.navbar-dark {
+	.navbar-brand {
+		margin: 0;
+	}
+
+	.navbar-toggler {
+		background-color: $primary-color;
+		color: $secondary-color;
+		border-color: $secondary-color;
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	.navbar-nav .nav-link {
+		color: $primary-color;
+
+		&:focus, &:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+.dropdown-menu {
+	background-color: $secondary-color;
+	border: none;
+	padding: 0 0 0 10px;
+}
+
+.dropdown-menu.show {
+	display: block;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+}
