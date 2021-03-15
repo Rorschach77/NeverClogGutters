@@ -39,3 +39,43 @@
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 }
+
+.accordion {
+	.accordion-button {
+		background-color: white;
+		color: $primary-color;
+		border: none;
+		display: inline-block;
+
+		span {
+			flex: auto;
+		}
+
+		i.fa-angle {
+			&::before {
+				content: "\f105";
+			}
+		}
+
+		&:not(.collapsed) {
+			i.fa-angle {
+				&::before {
+					content: "\f107";
+				}
+			}
+		}
+	}
+
+	.accordion-button:focus {
+		border: none;
+		box-shadow: none;
+	}
+
+	.accordion-collapse {
+		border: none;
+
+		.accordion-body {
+			padding-top: 0;
+		}
+	}
+}

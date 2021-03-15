@@ -91,6 +91,13 @@ a {
 	}
 }
 
+.client-image {
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100px;
+	width: 100px;
+}
+
 div.divider {
 	width: 50px;
 	border-bottom: 2px solid $primary-color;
@@ -113,8 +120,8 @@ div.circle {
 #back-to-top {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
-	bottom: 70px; /* Place the button at the bottom of the page */
-	right: 10px; /* Place the button 30px from the right */
+	bottom: 70px; /* Place the button at the bottom of the page - footer height */
+	right: 10px; /* Place the button 10px from the right */
 	z-index: 99; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
@@ -137,4 +144,17 @@ div.circle {
 		object-fit: cover;
 		border-radius: 12px;
 	}
+}
+
+.text-overlay {
+	display: block;
+	position: absolute;
+	bottom: -5%;
+	background-color: $ternary-color;
+	color: $translucent;
+	padding: 10px;
+	border-radius: 12px 0 12px 0;
+	left: 20px;
+	width: 45%;
+	font-weight: 400;
 }
